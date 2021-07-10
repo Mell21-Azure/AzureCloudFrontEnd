@@ -31,7 +31,7 @@ componentDidMount(){
 
         return(
             <div className="auth-inner">
-                <h2>Click the icon<Link to={'/game'} className="nav-link"><img src="https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/512x512/moneybag_coins.png" className="img"></img><img/></Link>to play Collectibe game </h2>
+                <h2>Click the icon below<Link to={'/game'} className="nav-link"><img src="https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/512x512/moneybag_coins.png" className="img"></img><img/></Link>to play Collectibe game </h2>
             </div>
         )
         }
