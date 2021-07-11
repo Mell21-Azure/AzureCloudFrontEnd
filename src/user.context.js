@@ -7,8 +7,12 @@ export const AuthContext = ({user, children}) => {
     const isAuthenticated = ()=>{
         return currentUser!==undefined && currentUser.token!== "";
     }
+
+    const isAuthorizeToPlay = () =>{
+        return currentUser!==undefined && currentUser.user.authorize === true;
+    }
     return (
-        <UserContext.Provider value={{currentUser, setCurrentUser, isAuthenticated}}>
+        <UserContext.Provider value={{currentUser, setCurrentUser, isAuthenticated,isAuthorizeToPlay}}>
             {children}
         </UserContext.Provider>
     )

@@ -13,13 +13,15 @@ handleSubmit = e =>{
     last_name: this.lastName,
     email: this.email,
     password: this.password,
-    password_confirm: this.confirmPassword
+    password_confirm: this.confirmPassword,
+    
   };
 
   
   const data2 ={
     email: this.email,
-    password: this.password
+    password: this.password,
+    authorize:this.authorize
   };
 
   
@@ -72,16 +74,24 @@ render(){
 
                <div className="form-group">
                <label>Password</label>
-               <input type="text" className="form-control" placeholder="Password"
+               <input type="password" className="form-control" placeholder="Password"
                onChange={e => this.password= e.target.value} />
                </div>
 
-
              <div className="form-group">
                <label>Confirm Password</label>
-               <input type="text" className="form-control" placeholder="Confirm Password"
+               <input type="password" className="form-control" placeholder="Confirm Password"
                onChange={e => this.confirmPassword = e.target.value} />
                </div>
+
+               <div class="form-check">
+               <input className="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate"
+               onChange={e => this.authorize = e.target.value}/>
+               <label className="form-check-label" for="flexCheckIndeterminate">
+                    Autoriser à jouer
+               </label>
+               </div>
+       
                
                <div className="d-grid gap-2">
                <div></div>

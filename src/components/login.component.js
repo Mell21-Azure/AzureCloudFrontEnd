@@ -60,7 +60,7 @@ const Login = ()=>{
      
                     <div className="form-group">
                     <label>Password</label>
-                    <input type="text" className="form-control" placeholder="Password"
+                    <input type="password" className="form-control" placeholder="Password"
                     onChange={e => setPassword(e.target.value)} />
                     </div>
                     

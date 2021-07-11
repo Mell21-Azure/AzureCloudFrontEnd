@@ -27,7 +27,7 @@ componentDidMount(){
         if(!isAuthenticated()){
             
             return <Redirect to='/login' />
-        }else{
+        }else {
 
         return(
             <div className="auth-inner">
