@@ -11,7 +11,8 @@ import {  Link  } from 'react-router-dom';
                 isAuthorizeToPlay()?
             
            <div className=''>
-               <iframe className="content" src ='http://20.199.118.236/'> Collectible Game</iframe>
+               <iframe className="content" src ='http://20.199.117.202/'> Collectible Game</iframe>
+              
            </div>
            :<>
            <div className="auth-inner">
